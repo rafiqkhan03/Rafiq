@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abdul Rafiq Khan - Computer Science Graduate specializing in Python, Data Science, AI/ML, and SQL. Portfolio displaying projects, technical skills, and experience.">
-    <meta name="keywords" content="Abdul Rafiq Khan, Data Science, Machine Learning, AI, Python, SQL, Computer Science Engineer, Portfolio">
+    <meta name="description" content="Abdul Rafiq Khan - Computer Science Graduate specializing in Data Science, AI/ML, Python, and Full-Stack Machine Learning.">
+    <meta name="keywords" content="Abdul Rafiq Khan, Data Science, AI/ML, Python, Deep Learning, Computer Vision, Portfolio, Software Engineer">
     <meta name="author" content="Abdul Rafiq Khan">
-    
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Abdul Rafiq Khan | AI/ML & Data Science Engineer">
-    <meta property="og:description" content="Computer Science graduate skilled in Python, SQL, Data Science, and AI/ML.">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Abdul Rafiq Khan | Data Science & AI/ML Engineer">
+    <meta property="og:description" content="Portfolio of Abdul Rafiq Khan featuring AI-Powered Smart Farming, Computer Vision YOLOv8 systems, and Data Analytics projects.">
     <meta property="og:type" content="website">
 
     <title>Abdul Rafiq Khan | AI/ML & Data Science Engineer</title>
 
-    <!-- Font Awesome Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS File -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress-container">
-        <div class="scroll-progress-bar" id="progressBar"></div>
-    </div>
+    <!-- Scroll Indicator -->
+    <div class="scroll-tracker" id="scrollTracker" aria-hidden="true"></div>
 
     <!-- Navigation Header -->
-    <header class="navbar-header" id="header">
+    <header class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="brand-logo" aria-label="Abdul Rafiq Khan Home">
-                <span class="logo-box">ARK</span>
-                <span class="logo-text">Abdul Rafiq Khan<span class="dot">.</span></span>
+                <span class="logo-badge">ARK</span>
+                <span class="logo-name">Rafiq<span class="dot">.</span>ai</span>
             </a>
 
-            <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a></li>
-                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
-                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
-                    <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-                    <li><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
-                    <li><a href="#contact" class="nav-link"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#education" class="nav-item">Education</a></li>
+                    <li><a href="#certifications" class="nav-item">Certifications</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="./assets/main_resume.pdf" class="btn btn-outline nav-resume-btn" download target="_blank" rel="noopener">
-                        <i class="fa-solid fa-download"></i> Resume
+                    <a href="assets/resume.pdf" class="btn btn-outline btn-sm" download target="_blank" rel="noopener">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
                     </a>
                 </div>
             </nav>
@@ -64,83 +62,66 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
             <div class="container hero-grid">
-                <div class="hero-content">
-                    <div class="badge-status">
-                        <span class="status-dot pulse"></span> Open to Opportunities
+                <div class="hero-text">
+                    <div class="hero-status">
+                        <span class="pulse-dot"></span> Available for Data Science & AI/ML Roles
                     </div>
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Abdul Rafiq Khan</span>
-                    </h1>
-                    <h2 class="hero-subtitle">
-                        Computer Science Engineer | <span class="accent-text">Data Science & AI/ML Specialist</span>
-                    </h2>
-                    <p class="hero-description">
-                        Passionate about driving impactful, data-driven problem solving through Machine Learning, Deep Learning, Computer Vision, and full-stack intelligent dashboards.
+                    <h1 class="hero-name">Abdul Rafiq Khan</h1>
+                    <h2 class="hero-title">Computer Science Graduate | <span class="cyan-glow">AI/ML & Data Science</span></h2>
+                    <p class="hero-summary">
+                        Eager to contribute to organizational goals through data-driven problem solving, continuous learning, and effective collaboration while growing alongside the organization.
                     </p>
 
-                    <div class="hero-location">
-                        <i class="fa-solid fa-location-dot"></i> Bhilai, Chhattisgarh, India
+                    <div class="hero-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Bhilai, Chhattisgarh</span>
+                        <span><i class="fa-solid fa-envelope"></i> abdulrafiqk8@gmail.com</span>
                     </div>
 
-                    <div class="hero-actions">
+                    <div class="hero-cta-group">
                         <a href="#projects" class="btn btn-primary">
-                            View Projects <i class="fa-solid fa-arrow-right"></i>
+                            Explore Projects <i class="fa-solid fa-arrow-down-long"></i>
                         </a>
                         <a href="assets/resume.pdf" class="btn btn-secondary" download target="_blank" rel="noopener">
-                            <i class="fa-solid fa-file-pdf"></i> Download Resume
+                            <i class="fa-solid fa-download"></i> Download CV
                         </a>
-                        <a href="#contact" class="btn btn-outline">
-                            Contact Me
-                        </a>
-                    </div>
-
-                    <div class="hero-socials">
-                        <span class="socials-label">Connect with me:</span>
-                        <a href="https://linkedin.com/in/abdulrafiq-khan" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-link">
+                        <a href="https://linkedin.com/in/abdulrafiq-khan" target="_blank" rel="noopener" class="btn btn-icon" aria-label="LinkedIn Profile">
                             <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:abdulrafiqk8@gmail.com" aria-label="Email Me" class="social-link">
-                            <i class="fa-regular fa-envelope"></i>
-                        </a>
-                        <a href="tel:+917000857281" aria-label="Call Me" class="social-link">
-                            <i class="fa-solid fa-phone"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="hero-visual">
-                    <div class="terminal-card">
-                        <div class="terminal-header">
-                            <div class="terminal-buttons">
-                                <span class="btn-dot close"></span>
-                                <span class="btn-dot minimize"></span>
-                                <span class="btn-dot maximize"></span>
+                <div class="hero-interactive">
+                    <div class="console-box">
+                        <div class="console-header">
+                            <div class="console-controls">
+                                <span class="c-dot red"></span>
+                                <span class="c-dot yellow"></span>
+                                <span class="c-dot green"></span>
                             </div>
-                            <div class="terminal-title">ark_profile.py</div>
+                            <span class="console-title">candidate_pipeline.py</span>
                         </div>
-                        <div class="terminal-body">
-                            <pre><code><span class="code-keyword">class</span> <span class="code-class">Engineer</span>:
-    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
-        self.name = <span class="code-string">"Abdul Rafiq Khan"</span>
-        self.degree = <span class="code-string">"B.Tech CSE (2022-2026)"</span>
-        self.spi = <span class="code-number">7.6</span>
-        self.core_focus = [
-            <span class="code-string">"Data Science"</span>, 
-            <span class="code-string">"AI / Machine Learning"</span>, 
-            <span class="code-string">"Deep Learning & NLP"</span>
-        ]
+                        <div class="console-body">
+                            <pre><code><span class="c-keyword">import</span> numpy <span class="c-keyword">as</span> np
+<span class="c-keyword">import</span> pandas <span class="c-keyword">as</span> pd
 
-    <span class="code-keyword">def</span> <span class="code-func">get_objective</span>(self):
-        <span class="code-keyword">return</span> <span class="code-string">"Applying technical & analytical skills to organizational goals through data-driven problem solving."</span>
+<span class="c-comment"># Primary Candidate Profile</span>
+candidate = {
+    <span class="c-string">"name"</span>: <span class="c-string">"Abdul Rafiq Khan"</span>,
+    <span class="c-string">"degree"</span>: <span class="c-string">"B.Tech CSE (Core)"</span>,
+    <span class="c-string">"spi"</span>: <span class="c-number">7.6</span>,
+    <span class="c-string">"core_skills"</span>: [<span class="c-string">"Python"</span>, <span class="c-string">"SQL"</span>, <span class="c-string">"AI/ML"</span>, <span class="c-string">"Deep Learning"</span>],
+    <span class="c-string">"models_built"</span>: [<span class="c-string">"YOLOv8"</span>, <span class="c-string">"MobileNet V2"</span>, <span class="c-string">"CNNs"</span>],
+    <span class="c-string">"status"</span>: <span class="c-string">"Ready to Deploy"</span>
+}
 
-<span class="code-comment"># Instantiate profile</span>
-candidate = Engineer()
-<span class="code-builtin">print</span>(candidate.get_objective())</code></pre>
+<span class="c-keyword">def</span> <span class="c-func">evaluate_impact</span>(profile):
+    <span class="c-keyword">return</span> f<span class="c-string">"{profile['name']} ready for Data-Driven Solutions!"</span>
+
+print(evaluate_impact(candidate))</code></pre>
                         </div>
                     </div>
                 </div>
@@ -150,30 +131,38 @@ candidate = Engineer()
         <!-- About Section -->
         <section id="about" class="section about-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">// 01. Profile</span>
-                    <h2 class="section-title">About Me</h2>
-                    <div class="title-bar"></div>
+                <div class="section-heading">
+                    <span class="tag-line">// 01. PROFILE OVERVIEW</span>
+                    <h2>About Me</h2>
+                    <div class="accent-line"></div>
                 </div>
 
-                <div class="about-grid">
-                    <div class="about-card card-glow">
-                        <div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
-                        <h3>Professional Summary</h3>
-                        <p>
-                            Computer Science graduate skilled in <strong>Python, SQL, Data Science, and AI/ML</strong>. Seeking an opportunity to apply and further develop my technical and analytical skills in a professional environment. Eager to contribute to organizational goals through data-driven problem solving, continuous learning, and effective collaboration while growing alongside the organization.
+                <div class="about-card-wrapper">
+                    <div class="about-main-card">
+                        <div class="card-badge"><i class="fa-solid fa-bullseye"></i> Executive Summary</div>
+                        <p class="about-text">
+                            Computer Science graduate skilled in <strong>Python, SQL, Data science, and AI/ML</strong>, seeking an opportunity to apply and further develop my technical and analytical skills in a professional environment. Eager to contribute to organizational goals through data-driven problem solving, continuous learning, and effective collaboration while growing alongside the organization.
                         </p>
                     </div>
 
-                    <div class="about-card card-glow">
-                        <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
-                        <h3>Key Strengths & Focus</h3>
-                        <ul class="strengths-list">
-                            <li><i class="fa-solid fa-check"></i> <strong>Data-Driven Problem Solving:</strong> Building practical solutions with real-world impact.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>AI & Deep Learning:</strong> Transfer learning, Object detection (YOLOv8), and Neural Networks.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Full-Stack Analytics:</strong> Backend integrations (FastAPI, MySQL) with user dashboards.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Continuous Learning:</strong> Constantly expanding expertise across Generative AI & Big Data tools.</li>
-                        </ul>
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item">
+                            <div class="h-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h4>AI & Model Training</h4>
+                            <p>Hands-on experience developing CNN transfer learning models and object tracking computer vision systems.</p>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="h-icon"><i class="fa-solid fa-chart-diagram"></i></div>
+                            <h4>Data Analytics Pipeline</h4>
+                            <p>Proficient in EDA, data preprocessing, visualization with Pandas, Seaborn, Matplotlib, Power BI, and Excel.</p>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="h-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <h4>Full Engineering Stack</h4>
+                            <p>Capable of pairing machine learning engines with FastAPI, MySQL backends, and responsive user interfaces.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,66 +171,76 @@ candidate = Engineer()
         <!-- Skills Section -->
         <section id="skills" class="section skills-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">// 02. Expertise</span>
-                    <h2 class="section-title">Technical Capabilities</h2>
-                    <div class="title-bar"></div>
+                <div class="section-heading">
+                    <span class="tag-line">// 02. TECHNICAL MATRIX</span>
+                    <h2>Skills & Technologies</h2>
+                    <div class="accent-line"></div>
                 </div>
 
                 <div class="skills-grid">
-                    <!-- Category 1 -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i class="fa-solid fa-brain"></i>
-                            <h3>Data Science & AI / ML</h3>
-                        </div>
-                        <div class="tags-wrapper">
-                            <span class="skill-tag"><i class="fa-solid fa-filter"></i> Data Preprocessing</span>
-                            <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> EDA</span>
-                            <span class="skill-tag"><i class="fa-solid fa-database"></i> Pandas</span>
-                            <span class="skill-tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
-                            <span class="skill-tag"><i class="fa-solid fa-chart-pie"></i> Data Visualization</span>
-                            <span class="skill-tag"><i class="fa-solid fa-chart-area"></i> Seaborn</span>
-                            <span class="skill-tag"><i class="fa-solid fa-image"></i> Matplotlib</span>
-                            <span class="skill-tag"><i class="fa-solid fa-robot"></i> Machine Learning</span>
-                            <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Deep Learning</span>
-                            <span class="skill-tag"><i class="fa-solid fa-language"></i> Natural Language Processing</span>
-                            <span class="skill-tag"><i class="fa-solid fa-server"></i> Big Data</span>
-                            <span class="skill-tag"><i class="fa-solid fa-cubes"></i> Hadoop</span>
-                            <span class="skill-tag"><i class="fa-solid fa-microchip"></i> TensorFlow</span>
-                            <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> Keras</span>
-                            <span class="skill-tag"><i class="fa-solid fa-sparkles"></i> Generative AI</span>
-                        </div>
-                    </div>
-
-                    <!-- Category 2 -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
+                    <!-- Core Programming -->
+                    <div class="skill-group">
+                        <div class="group-header">
                             <i class="fa-solid fa-code"></i>
-                            <h3>Programming & Analytics</h3>
+                            <h3>Programming Languages</h3>
                         </div>
-                        <div class="tags-wrapper">
-                            <span class="skill-tag highlight-tag"><i class="fa-brands fa-python"></i> Python</span>
-                            <span class="skill-tag highlight-tag"><i class="fa-solid fa-database"></i> SQL</span>
-                            <span class="skill-tag"><i class="fa-solid fa-chart-column"></i> Power BI</span>
-                            <span class="skill-tag"><i class="fa-solid fa-file-excel"></i> Excel</span>
-                            <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-                            <span class="skill-tag"><i class="fa-solid fa-r"></i> R Language</span>
+                        <div class="pills-container">
+                            <span class="skill-pill featured"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-pill featured"><i class="fa-solid fa-database"></i> SQL</span>
+                            <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="skill-pill"><i class="fa-solid fa-r"></i> R</span>
                         </div>
                     </div>
 
-                    <!-- Category 3 -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i class="fa-solid fa-wrench"></i>
-                            <h3>Developer Tools & IDEs</h3>
+                    <!-- Data Science & AI/ML -->
+                    <div class="skill-group">
+                        <div class="group-header">
+                            <i class="fa-solid fa-microchip"></i>
+                            <h3>Data Science & AI/ML</h3>
                         </div>
-                        <div class="tags-wrapper">
-                            <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</span>
-                            <span class="skill-tag"><i class="fa-solid fa-coffee"></i> Apache NetBeans</span>
-                            <span class="skill-tag"><i class="fa-solid fa-chart-bar"></i> RStudio</span>
-                            <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
-                            <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <div class="pills-container">
+                            <span class="skill-pill">Data Preprocessing</span>
+                            <span class="skill-pill">EDA</span>
+                            <span class="skill-pill">Pandas</span>
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">Data Visualization</span>
+                            <span class="skill-pill">Seaborn</span>
+                            <span class="skill-pill">Matplotlib</span>
+                            <span class="skill-pill featured">Machine Learning</span>
+                            <span class="skill-pill featured">Deep Learning</span>
+                            <span class="skill-pill">Natural Language Processing</span>
+                            <span class="skill-pill">Big Data</span>
+                            <span class="skill-pill">Hadoop</span>
+                            <span class="skill-pill">TensorFlow</span>
+                            <span class="skill-pill">Keras</span>
+                            <span class="skill-pill">Generative AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Analytics & BI -->
+                    <div class="skill-group">
+                        <div class="group-header">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h3>Analytics & Business Intelligence</h3>
+                        </div>
+                        <div class="pills-container">
+                            <span class="skill-pill"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+                            <span class="skill-pill"><i class="fa-solid fa-file-excel"></i> Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-group">
+                        <div class="group-header">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <h3>Tools & Development Environments</h3>
+                        </div>
+                        <div class="pills-container">
+                            <span class="skill-pill"><i class="fa-solid fa-code"></i> VS Code</span>
+                            <span class="skill-pill"><i class="fa-solid fa-cubes"></i> Apache NetBeans</span>
+                            <span class="skill-pill"><i class="fa-solid fa-laptop-code"></i> RStudio</span>
+                            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
                         </div>
                     </div>
                 </div>
@@ -251,28 +250,28 @@ candidate = Engineer()
         <!-- Projects Section -->
         <section id="projects" class="section projects-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">// 03. Portfolio</span>
-                    <h2 class="section-title">Featured Technical Projects</h2>
-                    <div class="title-bar"></div>
+                <div class="section-heading">
+                    <span class="tag-line">// 03. ENGINEERING WORKS</span>
+                    <h2>Featured Projects</h2>
+                    <div class="accent-line"></div>
                 </div>
 
-                <div class="projects-grid">
+                <div class="projects-wrapper">
                     <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div class="project-type"><i class="fa-solid fa-seedling"></i> AI / Computer Vision / Full-Stack</div>
-                            <h3 class="project-title">AI-Powered Smart Farming Dashboard with Crop Disease Detection</h3>
+                    <article class="project-card">
+                        <div class="p-card-top">
+                            <div class="p-badge"><i class="fa-solid fa-seedling"></i> AI & AgriTech Platform</div>
+                            <h3 class="p-title">AI-Powered Smart Farming Dashboard with Crop Disease Detection</h3>
                         </div>
-                        <div class="project-body">
-                            <ul class="project-highlights">
-                                <li><strong>Crop Disease Detection:</strong> Developed a platform using Convolutional Neural Networks (MobileNet V2 Transfer Learning) achieving real-time diagnosis with tailored cure recommendations.</li>
-                                <li><strong>Intelligent Recommendations:</strong> Implemented ML-based crop & fertilizer recommendation engine alongside weather-aware irrigation scheduling via OpenWeatherMap API.</li>
-                                <li><strong>Role-Based System:</strong> Designed complete dashboard featuring admin control panel, prediction history logging, and CSV export capabilities backed by MySQL database.</li>
+                        <div class="p-card-body">
+                            <ul class="p-details">
+                                <li>Developed a smart farming platform featuring real-time crop disease diagnosis using CNN (MobileNet V2 Transfer Learning) with structured cure recommendations.</li>
+                                <li>Implemented ML-based intelligent crop and fertilizer recommendation engine alongside weather-aware irrigation scheduling powered by OpenWeatherMap API.</li>
+                                <li>Designed a role-based dashboard containing admin management, historical prediction logs, and CSV reporting backed by MySQL database.</li>
                             </ul>
                         </div>
-                        <div class="project-footer">
-                            <div class="tech-stack">
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
                                 <span>Python</span>
                                 <span>FastAPI</span>
                                 <span>TensorFlow/Keras</span>
@@ -282,23 +281,23 @@ candidate = Engineer()
                                 <span>HTML/CSS/JS</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div class="project-type"><i class="fa-solid fa-video"></i> Computer Vision & Deep Learning</div>
-                            <h3 class="project-title">Intelligent Animal Detection and Alert System using YOLOv8</h3>
+                    <article class="project-card">
+                        <div class="p-card-top">
+                            <div class="p-badge"><i class="fa-solid fa-eye"></i> Computer Vision & Safety</div>
+                            <h3 class="p-title">Intelligent Animal Detection and Alert System using YOLOv8</h3>
                         </div>
-                        <div class="project-body">
-                            <ul class="project-highlights">
-                                <li><strong>Real-Time Detection:</strong> Built an automated real-time object detection and tracking visual intelligence pipeline utilizing YOLOv8 and OpenCV.</li>
-                                <li><strong>Priority Alert Mechanism:</strong> Engineered custom priority-based warning system triggered on visual thresholds.</li>
-                                <li><strong>Practical Applications:</strong> Specifically engineered for road safety enhancements, wildlife monitoring, and smart security surveillance scenarios.</li>
+                        <div class="p-card-body">
+                            <ul class="p-details">
+                                <li>Engineered a real-time visual detection and object tracking pipeline using YOLOv8 (Ultralytics) and OpenCV.</li>
+                                <li>Implemented a priority-based alert mechanism to trigger warnings during critical visual detections.</li>
+                                <li>Tailored for practical deployment in road safety enhancement, wildlife monitoring, and smart surveillance systems.</li>
                             </ul>
                         </div>
-                        <div class="project-footer">
-                            <div class="tech-stack">
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
                                 <span>Python</span>
                                 <span>OpenCV</span>
                                 <span>YOLOv8</span>
@@ -307,29 +306,29 @@ candidate = Engineer()
                                 <span>Deep Learning</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-header">
-                            <div class="project-type"><i class="fa-solid fa-hotel"></i> Enterprise Software Engineering</div>
-                            <h3 class="project-title">Hotel Management System</h3>
+                    <article class="project-card">
+                        <div class="p-card-top">
+                            <div class="p-badge"><i class="fa-solid fa-hotel"></i> Enterprise System</div>
+                            <h3 class="p-title">Hotel Management System</h3>
                         </div>
-                        <div class="project-body">
-                            <ul class="project-highlights">
-                                <li><strong>Core Functionality:</strong> Engineered a desktop software application to seamlessly manage hotel room bookings, guest records, and billing transactions.</li>
-                                <li><strong>Efficiency Metric:</strong> Reduced manual booking entry processing time by <strong>40%</strong> through structured data handling and intuitive interface design.</li>
+                        <div class="p-card-body">
+                            <ul class="p-details">
+                                <li>Developed an integrated software application to manage room bookings, customer records, and billing operations.</li>
+                                <li>Achieved a <strong>40% reduction in manual booking entry time</strong> through structured workflow design and connectivity.</li>
                             </ul>
                         </div>
-                        <div class="project-footer">
-                            <div class="tech-stack">
-                                <span>Java</span>
-                                <span>OOP</span>
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>JAVA</span>
                                 <span>Apache NetBeans</span>
+                                <span>OOP</span>
                                 <span>GUI</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -337,59 +336,58 @@ candidate = Engineer()
         <!-- Education Section -->
         <section id="education" class="section education-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">// 04. Background</span>
-                    <h2 class="section-title">Education Timeline</h2>
-                    <div class="title-bar"></div>
+                <div class="section-heading">
+                    <span class="tag-line">// 04. ACADEMIC JOURNEY</span>
+                    <h2>Education</h2>
+                    <div class="accent-line"></div>
                 </div>
 
-                <div class="timeline">
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <div class="timeline-content card-glow">
-                            <div class="timeline-meta">
-                                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2022 – 2026</span>
-                                <span class="timeline-badge">Graduation</span>
+                <div class="education-timeline">
+                    <!-- B.Tech -->
+                    <div class="timeline-block">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-card">
+                            <div class="t-header">
+                                <span class="t-year">2022 - 2026</span>
+                                <span class="t-status font-mono">B.Tech Degree</span>
                             </div>
-                            <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
-                            <h4 class="timeline-institution">Computer Science & Engineering (Core)</h4>
-                            <p class="institution-name"><i class="fa-solid fa-university"></i> Shri Shankaracharya Technical Campus, Bhilai - CSVTU</p>
-                            <div class="academic-score">
-                                <span class="score-label">SPI Academic Performance:</span>
-                                <span class="score-value">7.6</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"><i class="fa-solid fa-school"></i></div>
-                        <div class="timeline-content card-glow">
-                            <div class="timeline-meta">
-                                <span class="timeline-badge">Senior Secondary</span>
-                            </div>
-                            <h3 class="timeline-title">Class XII (Senior Secondary)</h3>
-                            <p class="institution-name"><i class="fa-solid fa-building-columns"></i> CBSE Board</p>
-                            <div class="academic-score">
-                                <span class="score-label">Percentage:</span>
-                                <span class="score-value">65%</span>
+                            <h3>B.Tech in Computer Science & Engineering (Core)</h3>
+                            <p class="t-institute"><i class="fa-solid fa-university"></i> Shri Shankaracharya Technical Campus, Bhilai - CSVTU</p>
+                            <div class="t-metric">
+                                <span class="m-label">SPI Score:</span>
+                                <span class="m-val">7.6</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Timeline Item 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"><i class="fa-solid fa-school"></i></div>
-                        <div class="timeline-content card-glow">
-                            <div class="timeline-meta">
-                                <span class="timeline-badge">Secondary</span>
+                    <!-- Class XII -->
+                    <div class="timeline-block">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-card">
+                            <div class="t-header">
+                                <span class="t-status font-mono">Senior Secondary</span>
                             </div>
-                            <h3 class="timeline-title">Class X (Secondary)</h3>
-                            <p class="institution-name"><i class="fa-solid fa-building-columns"></i> CBSE Board</p>
-                            <div class="academic-score">
-                                <span class="score-label">Percentage:</span>
-                                <span class="score-value">72%</span>
+                            <h3>Class XII (CBSE)</h3>
+                            <p class="t-institute"><i class="fa-solid fa-building-columns"></i> Central Board of Secondary Education</p>
+                            <div class="t-metric">
+                                <span class="m-label">Percentage:</span>
+                                <span class="m-val">65%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Class X -->
+                    <div class="timeline-block">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-card">
+                            <div class="t-header">
+                                <span class="t-status font-mono">Secondary</span>
+                            </div>
+                            <h3>Class X (CBSE)</h3>
+                            <p class="t-institute"><i class="fa-solid fa-building-columns"></i> Central Board of Secondary Education</p>
+                            <div class="t-metric">
+                                <span class="m-label">Percentage:</span>
+                                <span class="m-val">72%</span>
                             </div>
                         </div>
                     </div>
@@ -400,22 +398,22 @@ candidate = Engineer()
         <!-- Certifications Section -->
         <section id="certifications" class="section certifications-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">// 05. Credentials</span>
-                    <h2 class="section-title">Certifications & Training</h2>
-                    <div class="title-bar"></div>
+                <div class="section-heading">
+                    <span class="tag-line">// 05. CERTIFICATIONS & TRAINING</span>
+                    <h2>Professional Training</h2>
+                    <div class="accent-line"></div>
                 </div>
 
-                <div class="certifications-grid">
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
-                        <div class="cert-details">
-                            <div class="cert-date"><i class="fa-regular fa-calendar-alt"></i> May 2024 – Sep 2024</div>
-                            <h3 class="cert-title">Regular Training on JAVA</h3>
-                            <p class="cert-provider"><i class="fa-solid fa-building"></i> SEED IT Solution</p>
-                            <div class="cert-topics">
+                <div class="cert-grid">
+                    <div class="cert-box">
+                        <div class="c-icon"><i class="fa-brands fa-java"></i></div>
+                        <div class="c-info">
+                            <span class="c-date"><i class="fa-regular fa-calendar"></i> May 2024 – Sep 2024</span>
+                            <h3>Regular Training on JAVA</h3>
+                            <p class="c-org"><i class="fa-solid fa-certificate"></i> SEED IT Solution</p>
+                            <div class="c-tags">
                                 <span>Core Java</span>
-                                <span>Object-Oriented Programming (OOP)</span>
+                                <span>OOP</span>
                                 <span>GUI Development</span>
                                 <span>Database Connectivity</span>
                             </div>
@@ -428,63 +426,35 @@ candidate = Engineer()
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">// 06. Reach Out</span>
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="title-bar"></div>
+                <div class="section-heading">
+                    <span class="tag-line">// 06. GET IN TOUCH</span>
+                    <h2>Contact Information</h2>
+                    <div class="accent-line"></div>
                 </div>
 
                 <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Let's Connect</h3>
-                        <p>
-                            I am actively seeking software engineering, data science, and AI/ML entry-level roles or collaborative projects. Feel free to reach out directly via phone, email, or LinkedIn.
-                        </p>
-
-                        <div class="contact-methods">
-                            <a href="mailto:abdulrafiqk8@gmail.com" class="contact-item">
-                                <div class="item-icon"><i class="fa-regular fa-envelope"></i></div>
-                                <div class="item-text">
-                                    <span class="label">Email</span>
-                                    <span class="value">abdulrafiqk8@gmail.com</span>
-                                </div>
-                            </a>
-
-                            <a href="tel:+917000857281" class="contact-item">
-                                <div class="item-icon"><i class="fa-solid fa-phone"></i></div>
-                                <div class="item-text">
-                                    <span class="label">Phone</span>
-                                    <span class="value">+91 70008 57281</span>
-                                </div>
-                            </a>
-
-                            <div class="contact-item">
-                                <div class="item-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="item-text">
-                                    <span class="label">Location</span>
-                                    <span class="value">Bhilai, Chhattisgarh, India</span>
-                                </div>
-                            </div>
-
-                            <a href="https://linkedin.com/in/abdulrafiq-khan" target="_blank" rel="noopener" class="contact-item">
-                                <div class="item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                                <div class="item-text">
-                                    <span class="label">LinkedIn</span>
-                                    <span class="value">linkedin.com/in/abdulrafiq-khan</span>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope c-icon-main"></i>
+                        <h4>Email Address</h4>
+                        <a href="mailto:abdulrafiqk8@gmail.com" class="c-link">abdulrafiqk8@gmail.com</a>
                     </div>
 
-                    <div class="contact-card-box">
-                        <div class="quick-cta-card">
-                            <i class="fa-solid fa-paper-plane cta-icon"></i>
-                            <h3>Direct Collaboration</h3>
-                            <p>Ready to bring analytical thinking and intelligent model deployment to your team.</p>
-                            <a href="mailto:abdulrafiqk8@gmail.com" class="btn btn-primary full-width">
-                                Send an Email Directly
-                            </a>
-                        </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone c-icon-main"></i>
+                        <h4>Phone Number</h4>
+                        <a href="tel:+917000857281" class="c-link">+91 70008 57281</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin-in c-icon-main"></i>
+                        <h4>LinkedIn Profile</h4>
+                        <a href="https://linkedin.com/in/abdulrafiq-khan" target="_blank" rel="noopener" class="c-link">linkedin.com/in/abdulrafiq-khan</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot c-icon-main"></i>
+                        <h4>Current Location</h4>
+                        <p class="c-link-text">Bhilai, Chhattisgarh, India</p>
                     </div>
                 </div>
             </div>
@@ -494,35 +464,22 @@ candidate = Engineer()
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <div class="footer-left">
-                <a href="#hero" class="brand-logo small">
-                    <span class="logo-box">ARK</span>
-                    <span class="logo-text">Abdul Rafiq Khan</span>
-                </a>
-                <p>Computer Science Engineer specializing in AI/ML & Data Science.</p>
+            <div class="footer-brand">
+                <span class="logo-badge">ARK</span>
+                <span>Abdul Rafiq Khan</span>
             </div>
-
-            <div class="footer-right">
-                <ul class="footer-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <p class="copyright">
-                    &copy; <span id="currentYear"></span> Abdul Rafiq Khan. All rights reserved.
-                </p>
-            </div>
+            <p class="footer-copy">
+                &copy; <span id="copyrightYear"></span> Abdul Rafiq Khan. All rights reserved.
+            </p>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-    <!-- JS File -->
+    <!-- JavaScript File -->
     <script src="index.js"></script>
 </body>
 </html>

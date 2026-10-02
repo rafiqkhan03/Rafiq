@@ -1,41 +1,40 @@
 /**
- * Abdul Rafiq Khan - Portfolio Interactive Logic
+ * Interactive Script for Abdul Rafiq Khan Portfolio
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Copyright Year
-    const currentYearSpan = document.getElementById('currentYear');
-    if (currentYearSpan) {
-        currentYearSpan.textContent = new Date().getFullYear();
+    const yearSpan = document.getElementById('copyrightYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
     }
 
-    // Scroll Progress Bar
-    const progressBar = document.getElementById('progressBar');
+    // Top Scroll Progress Tracker
+    const scrollTracker = document.getElementById('scrollTracker');
     window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        if (progressBar) {
-            progressBar.style.width = scrolled + '%';
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progressPercentage = (scrollTop / scrollHeight) * 100;
+        if (scrollTracker) {
+            scrollTracker.style.width = `${progressPercentage}%`;
         }
     });
 
-    // Mobile Navigation Hamburger Toggle
+    // Mobile Hamburger Navigation Toggle
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const navMenu = document.getElementById('navMenu');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navItems = document.querySelectorAll('.nav-item');
 
     if (hamburgerBtn && navMenu) {
         hamburgerBtn.addEventListener('click', () => {
-            const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
-            hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
+            const isOpen = hamburgerBtn.classList.contains('active');
             hamburgerBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
+            hamburgerBtn.setAttribute('aria-expanded', !isOpen);
         });
 
-        // Close menu on navigation click
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
                 hamburgerBtn.classList.remove('active');
                 navMenu.classList.remove('active');
                 hamburgerBtn.setAttribute('aria-expanded', 'false');
@@ -43,41 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Header Shadow on Scroll
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-
-    // Active Link Highlighting on Scroll
+    // Active Navigation Highlight on Scroll
     const sections = document.querySelectorAll('section[id]');
-    
-    function highlightNavOnScroll() {
-        const scrollY = window.pageYOffset;
+    function highlightNav() {
+        const scrollPosition = window.scrollY + 120;
 
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 100;
+            const sectionTop = current.offsetTop;
             const sectionId = current.getAttribute('id');
-            const correspondingNavLink = document.querySelector(`.nav-link[href*="#${sectionId}"]`);
+            const navLink = document.querySelector(`.nav-item[href*="#${sectionId}"]`);
 
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                if (correspondingNavLink) {
-                    navLinks.forEach(link => link.classList.remove('active'));
-                    correspondingNavLink.classList.add('active');
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                if (navLink) {
+                    navItems.forEach(link => link.classList.remove('active'));
+                    navLink.classList.add('active');
                 }
             }
         });
     }
+    window.addEventListener('scroll', highlightNav);
 
-    window.addEventListener('scroll', highlightNavOnScroll);
-
-    // Back to Top Button Logic
-    const backToTopBtn = document.getElementById('backToTopBtn');
+    // Back to Top Button Control
+    const backToTopBtn = document.getElementById('backToTop');
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 400) {
